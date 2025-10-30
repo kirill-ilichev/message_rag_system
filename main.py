@@ -6,6 +6,13 @@ import faiss
 
 from openai import OpenAI
 
+EMBEDDING_MODEL = "text-embedding-3-small"
+LLM_MODEL = "gpt-4o-mini"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+if not OPENAI_API_KEY:
+    raise RuntimeError("Please set OPENAI_API_KEY environment variable.")
+client = OpenAI(api_key=OPENAI_API_KEY)
+
 
 class SourceItem(BaseModel):
     description: str = Field(
@@ -16,19 +23,12 @@ class SourceItem(BaseModel):
     )
     url: str = Field(..., description="HTTP/HTTPS link to the source message.")
 
+
 class RAGAnswer(BaseModel):
     answer: str = Field(..., description="Concise answer synthesized from the retrieved messages only.")
     sources: list[SourceItem] = Field(
         ..., description="List of sources cited in the answer, ordered by relevance."
     )
-
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-if not OPENAI_API_KEY:
-    raise RuntimeError("Please set OPENAI_API_KEY environment variable.")
-client = OpenAI(api_key=OPENAI_API_KEY)
-
-EMBEDDING_MODEL = "text-embedding-3-small"
-LLM_MODEL = "gpt-4o-mini"
 
 
 def _get_index_path(artifacts_dir: str) -> str:
