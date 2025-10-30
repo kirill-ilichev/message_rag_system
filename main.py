@@ -8,6 +8,7 @@ from openai import OpenAI
 
 EMBEDDING_MODEL = "text-embedding-3-small"
 LLM_MODEL = "gpt-4o-mini"
+SIMILARITY_THRESHOLD = 0.3
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 if not OPENAI_API_KEY:
     raise RuntimeError("Please set OPENAI_API_KEY environment variable.")
@@ -83,19 +84,24 @@ def build_index(messages_json: str, outdir: str = "artifacts_small") -> None:
     print(f"OK: {index.ntotal} vectors, dim={d}")
 
 
-def search(query: str, k: int = 5, path: str = "artifacts_small") -> list[dict[str, Any]]:
+def search(
+    query: str, k: int = 5, path: str = "artifacts_small", threshold: float = SIMILARITY_THRESHOLD
+) -> list[dict[str, Any]]:
     index, meta = load_artifacts(path)
     q = embed_texts([query])
     D, I = index.search(q, k)
     out = []
     for rank, idx in enumerate(I[0]):
+        score = float(D[0][rank])
+        if score < threshold:
+            continue
         out.append({
             "rank": rank + 1,
             "message_id": meta["ids"][idx],
             "url": meta["urls"][idx],
             "content": meta["texts"][idx],
             "author": meta["authors"][idx],
-            "score": float(D[0][rank]),
+            "score": score,
         })
     return out
 
@@ -108,7 +114,10 @@ def format_rag_answer(answer: RAGAnswer) -> str:
     return result
 
 
-def answer_with_sources(query: str, retrieved: list[dict[str, Any]]) -> RAGAnswer:
+def answer_with_sources(query: str, retrieved: list[dict[str, Any]]) -> RAGAnswer | None:
+    if not retrieved:
+        return None
+    
     context = ""
     for i, doc in enumerate(retrieved, 1):
         context += f"{i}. {doc['content']}\nAuthor: {doc['author']}\nSource: {doc['url']}\n\n"
@@ -136,12 +145,28 @@ if __name__ == "__main__":
     ap.add_argument("--build", help="Path to messages.json to build the index")
     ap.add_argument("--ask", help="Ask a question against the built index")
     ap.add_argument("--artifacts", default="artifacts_small", help="Artifacts directory (index & meta)")
+    ap.add_argument("--threshold", type=float, default=SIMILARITY_THRESHOLD, help=f"Minimum similarity score (0-1) for relevance (default: {SIMILARITY_THRESHOLD})")
+    ap.add_argument("--show-scores", action="store_true", help="Show similarity scores for retrieved messages")
     args = ap.parse_args()
 
     if args.build:
         build_index(args.build, outdir=args.artifacts)
     if args.ask:
-        hits = search(args.ask, k=5, path=args.artifacts)
-        answer = answer_with_sources(args.ask, hits)
-        formatted_answer = format_rag_answer(answer)
-        print(formatted_answer)
+        hits = search(args.ask, k=5, path=args.artifacts, threshold=args.threshold)
+        if not hits:
+            print(f"\nNo relevant messages found for: '{args.ask}'")
+            print("\nThis question appears to be unrelated to the available messages.")
+            print("Try asking about topics covered in your message database.")
+        else:
+            if args.show_scores:
+                print("\nRetrieved messages (with similarity scores):")
+                for hit in hits:
+                    print(f"  - Score: {hit['score']:.4f} | {hit['author']}: {hit['content'][:80]}...")
+                print()
+            
+            answer = answer_with_sources(args.ask, hits)
+            if answer:
+                formatted_answer = format_rag_answer(answer)
+                print(formatted_answer)
+            else:
+                print(f"\nCould not generate an answer for: '{args.ask}'")
