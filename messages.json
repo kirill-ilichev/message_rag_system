@@ -1,0 +1,824 @@
+[
+  {
+    "message_id": "msg_042",
+    "url": "https://example.com/msg_042",
+    "author": "John",
+    "timestamp": "2025-01-12T10:30:00Z",
+    "content": "We discussed the budget allocation and agreed on $50k for development and $20k for marketing.",
+    "metadata": {
+      "channel": "general",
+      "tags": ["budget", "allocation", "important"]
+    }
+  },
+  {
+    "message_id": "msg_001",
+    "url": "https://example.com/msg_001",
+    "author": "Alice",
+    "timestamp": "2025-01-01T09:00:00Z",
+    "content": "Happy New Year everyone! Looking forward to a great year ahead.",
+    "metadata": {"channel": "random", "tags": ["greeting"]}
+  },
+  {
+    "message_id": "msg_002",
+    "url": "https://example.com/msg_002",
+    "author": "Bob",
+    "timestamp": "2025-01-02T10:15:00Z",
+    "content": "The new coffee machine in the break room is amazing! Anyone tried it yet?",
+    "metadata": {"channel": "random", "tags": ["coffee", "office"]}
+  },
+  {
+    "message_id": "msg_003",
+    "url": "https://example.com/msg_003",
+    "author": "Carol",
+    "timestamp": "2025-01-03T11:30:00Z",
+    "content": "Reminder: Team lunch this Friday at 12pm. Please RSVP.",
+    "metadata": {"channel": "general", "tags": ["lunch", "event"]}
+  },
+  {
+    "message_id": "msg_004",
+    "url": "https://example.com/msg_004",
+    "author": "David",
+    "timestamp": "2025-01-04T13:45:00Z",
+    "content": "The API documentation needs updating. I'll work on it this week.",
+    "metadata": {"channel": "engineering", "tags": ["documentation", "api"]}
+  },
+  {
+    "message_id": "msg_005",
+    "url": "https://example.com/msg_005",
+    "author": "Emma",
+    "timestamp": "2025-01-05T15:20:00Z",
+    "content": "Customer feedback on the new UI looks positive so far. 85% satisfaction rate.",
+    "metadata": {"channel": "product", "tags": ["feedback", "ui"]}
+  },
+  {
+    "message_id": "msg_006",
+    "url": "https://example.com/msg_006",
+    "author": "Frank",
+    "timestamp": "2025-01-06T08:30:00Z",
+    "content": "Server maintenance scheduled for Saturday 2am-4am EST.",
+    "metadata": {"channel": "engineering", "tags": ["maintenance", "server"]}
+  },
+  {
+    "message_id": "msg_007",
+    "url": "https://example.com/msg_007",
+    "author": "Grace",
+    "timestamp": "2025-01-07T10:00:00Z",
+    "content": "Q4 sales report is ready for review. Numbers look good!",
+    "metadata": {"channel": "sales", "tags": ["report", "q4"]}
+  },
+  {
+    "message_id": "msg_008",
+    "url": "https://example.com/msg_008",
+    "author": "Henry",
+    "timestamp": "2025-01-08T12:15:00Z",
+    "content": "Does anyone have experience with Kubernetes? Need some advice.",
+    "metadata": {"channel": "engineering", "tags": ["kubernetes", "help"]}
+  },
+  {
+    "message_id": "msg_009",
+    "url": "https://example.com/msg_009",
+    "author": "Iris",
+    "timestamp": "2025-01-09T14:30:00Z",
+    "content": "New hire orientation is next Monday. Welcome package is ready.",
+    "metadata": {"channel": "hr", "tags": ["orientation", "hiring"]}
+  },
+  {
+    "message_id": "msg_010",
+    "url": "https://example.com/msg_010",
+    "author": "Jack",
+    "timestamp": "2025-01-10T16:45:00Z",
+    "content": "The parking lot will be closed for repaving next week.",
+    "metadata": {"channel": "facilities", "tags": ["parking", "maintenance"]}
+  },
+  {
+    "message_id": "msg_011",
+    "url": "https://example.com/msg_011",
+    "author": "Karen",
+    "timestamp": "2025-01-11T09:20:00Z",
+    "content": "Marketing campaign draft is ready for feedback. Check your email.",
+    "metadata": {"channel": "marketing", "tags": ["campaign", "draft"]}
+  },
+  {
+    "message_id": "msg_012",
+    "url": "https://example.com/msg_012",
+    "author": "Leo",
+    "timestamp": "2025-01-13T11:00:00Z",
+    "content": "Bug in the payment gateway fixed. Deploying to production now.",
+    "metadata": {"channel": "engineering", "tags": ["bug", "payment"]}
+  },
+  {
+    "message_id": "msg_013",
+    "url": "https://example.com/msg_013",
+    "author": "Maria",
+    "timestamp": "2025-01-14T13:15:00Z",
+    "content": "Client meeting went well. They approved the mockups!",
+    "metadata": {"channel": "design", "tags": ["client", "mockups"]}
+  },
+  {
+    "message_id": "msg_014",
+    "url": "https://example.com/msg_014",
+    "author": "Nathan",
+    "timestamp": "2025-01-16T15:30:00Z",
+    "content": "Security audit report came back clean. No major issues found.",
+    "metadata": {"channel": "security", "tags": ["audit", "report"]}
+  },
+  {
+    "message_id": "msg_015",
+    "url": "https://example.com/msg_015",
+    "author": "Olivia",
+    "timestamp": "2025-01-17T08:45:00Z",
+    "content": "Can someone review my pull request #234? It's ready to merge.",
+    "metadata": {"channel": "engineering", "tags": ["pr", "review"]}
+  },
+  {
+    "message_id": "msg_016",
+    "url": "https://example.com/msg_016",
+    "author": "Paul",
+    "timestamp": "2025-01-18T10:20:00Z",
+    "content": "Office supplies order placed. Should arrive by Friday.",
+    "metadata": {"channel": "operations", "tags": ["supplies", "order"]}
+  },
+  {
+    "message_id": "msg_017",
+    "url": "https://example.com/msg_017",
+    "author": "Quinn",
+    "timestamp": "2025-01-19T12:35:00Z",
+    "content": "The conference room projector is broken. IT has been notified.",
+    "metadata": {"channel": "facilities", "tags": ["equipment", "broken"]}
+  },
+  {
+    "message_id": "msg_018",
+    "url": "https://example.com/msg_018",
+    "author": "Rachel",
+    "timestamp": "2025-01-20T14:50:00Z",
+    "content": "Training session on the new CRM system is scheduled for next Tuesday.",
+    "metadata": {"channel": "training", "tags": ["crm", "training"]}
+  },
+  {
+    "message_id": "msg_019",
+    "url": "https://example.com/msg_019",
+    "author": "Sam",
+    "timestamp": "2025-01-21T16:05:00Z",
+    "content": "Website traffic is up 25% this month. Great job everyone!",
+    "metadata": {"channel": "analytics", "tags": ["traffic", "stats"]}
+  },
+  {
+    "message_id": "msg_020",
+    "url": "https://example.com/msg_020",
+    "author": "Tina",
+    "timestamp": "2025-01-22T09:10:00Z",
+    "content": "Updated the employee handbook. Please review section 5.",
+    "metadata": {"channel": "hr", "tags": ["handbook", "policy"]}
+  },
+  {
+    "message_id": "msg_021",
+    "url": "https://example.com/msg_021",
+    "author": "Uma",
+    "timestamp": "2025-01-23T11:25:00Z",
+    "content": "Mobile app beta testing starts tomorrow. Sign up if interested!",
+    "metadata": {"channel": "product", "tags": ["mobile", "beta"]}
+  },
+  {
+    "message_id": "msg_022",
+    "url": "https://example.com/msg_022",
+    "author": "Victor",
+    "timestamp": "2025-01-24T13:40:00Z",
+    "content": "Database backup completed successfully. All systems normal.",
+    "metadata": {"channel": "engineering", "tags": ["database", "backup"]}
+  },
+  {
+    "message_id": "msg_023",
+    "url": "https://example.com/msg_023",
+    "author": "Wendy",
+    "timestamp": "2025-01-25T15:55:00Z",
+    "content": "Holiday schedule for next month posted in the wiki.",
+    "metadata": {"channel": "hr", "tags": ["holiday", "schedule"]}
+  },
+  {
+    "message_id": "msg_024",
+    "url": "https://example.com/msg_024",
+    "author": "Xavier",
+    "timestamp": "2025-01-26T08:00:00Z",
+    "content": "Performance optimization reduced page load time by 40%.",
+    "metadata": {"channel": "engineering", "tags": ["performance", "optimization"]}
+  },
+  {
+    "message_id": "msg_025",
+    "url": "https://example.com/msg_025",
+    "author": "Yara",
+    "timestamp": "2025-01-27T10:15:00Z",
+    "content": "Social media engagement is at an all-time high this week!",
+    "metadata": {"channel": "marketing", "tags": ["social", "engagement"]}
+  },
+  {
+    "message_id": "msg_026",
+    "url": "https://example.com/msg_026",
+    "author": "Zack",
+    "timestamp": "2025-01-28T12:30:00Z",
+    "content": "Sprint retrospective notes are in the shared drive.",
+    "metadata": {"channel": "agile", "tags": ["retrospective", "sprint"]}
+  },
+  {
+    "message_id": "msg_027",
+    "url": "https://example.com/msg_027",
+    "author": "Amy",
+    "timestamp": "2025-01-29T14:45:00Z",
+    "content": "New design system components are live in Figma.",
+    "metadata": {"channel": "design", "tags": ["design-system", "figma"]}
+  },
+  {
+    "message_id": "msg_028",
+    "url": "https://example.com/msg_028",
+    "author": "Ben",
+    "timestamp": "2025-01-30T16:00:00Z",
+    "content": "Quarterly team building event ideas needed. Drop suggestions!",
+    "metadata": {"channel": "general", "tags": ["team-building", "event"]}
+  },
+  {
+    "message_id": "msg_029",
+    "url": "https://example.com/msg_029",
+    "author": "Chloe",
+    "timestamp": "2025-01-31T09:15:00Z",
+    "content": "Invoice processing system upgrade complete. Testing phase begins.",
+    "metadata": {"channel": "finance", "tags": ["invoice", "upgrade"]}
+  },
+  {
+    "message_id": "msg_030",
+    "url": "https://example.com/msg_030",
+    "author": "Dan",
+    "timestamp": "2025-02-01T11:30:00Z",
+    "content": "Code review guidelines updated in the wiki. Please read.",
+    "metadata": {"channel": "engineering", "tags": ["code-review", "guidelines"]}
+  },
+  {
+    "message_id": "msg_031",
+    "url": "https://example.com/msg_031",
+    "author": "Ella",
+    "timestamp": "2025-02-02T13:45:00Z",
+    "content": "User interviews scheduled for next week. 10 participants confirmed.",
+    "metadata": {"channel": "product", "tags": ["research", "interviews"]}
+  },
+  {
+    "message_id": "msg_032",
+    "url": "https://example.com/msg_032",
+    "author": "Fred",
+    "timestamp": "2025-02-03T15:00:00Z",
+    "content": "VPN credentials expire next month. Remember to renew!",
+    "metadata": {"channel": "it", "tags": ["vpn", "credentials"]}
+  },
+  {
+    "message_id": "msg_033",
+    "url": "https://example.com/msg_033",
+    "author": "Gina",
+    "timestamp": "2025-02-04T08:20:00Z",
+    "content": "Press release draft ready for executive review.",
+    "metadata": {"channel": "pr", "tags": ["press", "draft"]}
+  },
+  {
+    "message_id": "msg_034",
+    "url": "https://example.com/msg_034",
+    "author": "Harry",
+    "timestamp": "2025-02-05T10:35:00Z",
+    "content": "Container orchestration migration to AWS EKS in progress.",
+    "metadata": {"channel": "devops", "tags": ["aws", "eks", "migration"]}
+  },
+  {
+    "message_id": "msg_035",
+    "url": "https://example.com/msg_035",
+    "author": "Ivy",
+    "timestamp": "2025-02-06T12:50:00Z",
+    "content": "Customer support ticket volume down 15% this month. Excellent work!",
+    "metadata": {"channel": "support", "tags": ["tickets", "metrics"]}
+  },
+  {
+    "message_id": "msg_036",
+    "url": "https://example.com/msg_036",
+    "author": "James",
+    "timestamp": "2025-02-07T15:05:00Z",
+    "content": "Lunch and learn session on GraphQL next Thursday at 1pm.",
+    "metadata": {"channel": "learning", "tags": ["graphql", "lunch-learn"]}
+  },
+  {
+    "message_id": "msg_037",
+    "url": "https://example.com/msg_037",
+    "author": "Kelly",
+    "timestamp": "2025-02-08T16:20:00Z",
+    "content": "Annual company picnic planning has started. Volunteers needed!",
+    "metadata": {"channel": "events", "tags": ["picnic", "volunteers"]}
+  },
+  {
+    "message_id": "msg_038",
+    "url": "https://example.com/msg_038",
+    "author": "Liam",
+    "timestamp": "2025-02-09T09:35:00Z",
+    "content": "Accessibility audit completed. Implementing recommendations this sprint.",
+    "metadata": {"channel": "engineering", "tags": ["accessibility", "audit"]}
+  },
+  {
+    "message_id": "msg_039",
+    "url": "https://example.com/msg_039",
+    "author": "Mia",
+    "timestamp": "2025-02-10T11:50:00Z",
+    "content": "New partnership with TechCorp announced. Exciting times ahead!",
+    "metadata": {"channel": "business", "tags": ["partnership", "announcement"]}
+  },
+  {
+    "message_id": "msg_040",
+    "url": "https://example.com/msg_040",
+    "author": "Noah",
+    "timestamp": "2025-02-11T14:05:00Z",
+    "content": "CI/CD pipeline improvements reduced build time by 50%.",
+    "metadata": {"channel": "devops", "tags": ["cicd", "performance"]}
+  },
+  {
+    "message_id": "msg_041",
+    "url": "https://example.com/msg_041",
+    "author": "Oscar",
+    "timestamp": "2025-02-12T16:20:00Z",
+    "content": "Quarterly business review slides are in the shared folder.",
+    "metadata": {"channel": "executive", "tags": ["qbr", "slides"]}
+  },
+  {
+    "message_id": "msg_043",
+    "url": "https://example.com/msg_043",
+    "author": "Peter",
+    "timestamp": "2025-02-13T09:40:00Z",
+    "content": "Remote work policy updated. Check the employee portal.",
+    "metadata": {"channel": "hr", "tags": ["remote", "policy"]}
+  },
+  {
+    "message_id": "msg_044",
+    "url": "https://example.com/msg_044",
+    "author": "Rita",
+    "timestamp": "2025-02-14T11:55:00Z",
+    "content": "Valentine's Day office decorations look amazing! Thanks to the events team.",
+    "metadata": {"channel": "random", "tags": ["valentines", "decorations"]}
+  },
+  {
+    "message_id": "msg_046",
+    "url": "https://example.com/msg_046",
+    "author": "Steve",
+    "timestamp": "2025-02-15T15:25:00Z",
+    "content": "Load testing results show system handles 10k concurrent users easily.",
+    "metadata": {"channel": "qa", "tags": ["load-testing", "results"]}
+  },
+  {
+    "message_id": "msg_047",
+    "url": "https://example.com/msg_047",
+    "author": "Tracy",
+    "timestamp": "2025-02-16T08:40:00Z",
+    "content": "Monthly all-hands meeting moved to next Friday at 3pm.",
+    "metadata": {"channel": "general", "tags": ["meeting", "all-hands"]}
+  },
+  {
+    "message_id": "msg_048",
+    "url": "https://example.com/msg_048",
+    "author": "Ursula",
+    "timestamp": "2025-02-17T10:55:00Z",
+    "content": "Product roadmap for H2 2025 finalized. Review in Monday's meeting.",
+    "metadata": {"channel": "product", "tags": ["roadmap", "h2"]}
+  },
+  {
+    "message_id": "msg_049",
+    "url": "https://example.com/msg_049",
+    "author": "Vince",
+    "timestamp": "2025-02-18T13:10:00Z",
+    "content": "New employee referral bonus program starts next month. Details coming soon!",
+    "metadata": {"channel": "hr", "tags": ["referral", "bonus"]}
+  },
+  {
+    "message_id": "msg_050",
+    "url": "https://example.com/msg_050",
+    "author": "Wanda",
+    "timestamp": "2025-02-19T15:25:00Z",
+    "content": "Email server migration scheduled for Sunday night. Expect brief downtime.",
+    "metadata": {"channel": "it", "tags": ["email", "migration"]}
+  },
+  {
+    "message_id": "msg_051",
+    "url": "https://example.com/msg_051",
+    "author": "Xander",
+    "timestamp": "2025-02-20T16:40:00Z",
+    "content": "API rate limiting implemented. Documentation updated accordingly.",
+    "metadata": {"channel": "engineering", "tags": ["api", "rate-limiting"]}
+  },
+  {
+    "message_id": "msg_052",
+    "url": "https://example.com/msg_052",
+    "author": "Yasmin",
+    "timestamp": "2025-02-21T09:55:00Z",
+    "content": "Customer testimonials video project underway. Looking great!",
+    "metadata": {"channel": "marketing", "tags": ["video", "testimonials"]}
+  },
+  {
+    "message_id": "msg_053",
+    "url": "https://example.com/msg_053",
+    "author": "Zane",
+    "timestamp": "2025-02-22T12:10:00Z",
+    "content": "Bug bounty program launched. Details on the security page.",
+    "metadata": {"channel": "security", "tags": ["bug-bounty", "launch"]}
+  },
+  {
+    "message_id": "msg_054",
+    "url": "https://example.com/msg_054",
+    "author": "Anna",
+    "timestamp": "2025-02-23T14:25:00Z",
+    "content": "Design sprint for Q3 features kicks off Monday. Excited!",
+    "metadata": {"channel": "design", "tags": ["sprint", "q3"]}
+  },
+  {
+    "message_id": "msg_055",
+    "url": "https://example.com/msg_055",
+    "author": "Brian",
+    "timestamp": "2025-02-24T16:40:00Z",
+    "content": "Office WiFi upgrade complete. Speed tests showing 5x improvement!",
+    "metadata": {"channel": "it", "tags": ["wifi", "upgrade"]}
+  },
+  {
+    "message_id": "msg_056",
+    "url": "https://example.com/msg_056",
+    "author": "Clara",
+    "timestamp": "2025-02-25T08:55:00Z",
+    "content": "Compliance training due by end of month. Please complete ASAP.",
+    "metadata": {"channel": "compliance", "tags": ["training", "deadline"]}
+  },
+  {
+    "message_id": "msg_057",
+    "url": "https://example.com/msg_057",
+    "author": "Derek",
+    "timestamp": "2025-02-26T11:10:00Z",
+    "content": "Disaster recovery drill successful. All systems recovered in 2 hours.",
+    "metadata": {"channel": "operations", "tags": ["dr", "drill"]}
+  },
+  {
+    "message_id": "msg_058",
+    "url": "https://example.com/msg_058",
+    "author": "Elena",
+    "timestamp": "2025-02-27T13:25:00Z",
+    "content": "Customer churn rate decreased by 10% this quarter. Great retention work!",
+    "metadata": {"channel": "success", "tags": ["churn", "retention"]}
+  },
+  {
+    "message_id": "msg_059",
+    "url": "https://example.com/msg_059",
+    "author": "Felix",
+    "timestamp": "2025-02-28T15:40:00Z",
+    "content": "Monthly expense reports due tomorrow. Don't forget to submit!",
+    "metadata": {"channel": "finance", "tags": ["expenses", "deadline"]}
+  },
+  {
+    "message_id": "msg_060",
+    "url": "https://example.com/msg_060",
+    "author": "Gloria",
+    "timestamp": "2025-03-01T08:00:00Z",
+    "content": "March goals set for all teams. Check your team's objectives.",
+    "metadata": {"channel": "management", "tags": ["goals", "march"]}
+  },
+  {
+    "message_id": "msg_061",
+    "url": "https://example.com/msg_061",
+    "author": "Hugo",
+    "timestamp": "2025-03-02T10:15:00Z",
+    "content": "New Slack channels created for cross-team collaboration.",
+    "metadata": {"channel": "communication", "tags": ["slack", "channels"]}
+  },
+  {
+    "message_id": "msg_062",
+    "url": "https://example.com/msg_062",
+    "author": "Isabel",
+    "timestamp": "2025-03-03T12:30:00Z",
+    "content": "A/B test results show version B has 20% better conversion rate.",
+    "metadata": {"channel": "product", "tags": ["ab-test", "results"]}
+  },
+  {
+    "message_id": "msg_063",
+    "url": "https://example.com/msg_063",
+    "author": "Jake",
+    "timestamp": "2025-03-04T14:45:00Z",
+    "content": "New standing desks delivered to the office. Ergonomics matter!",
+    "metadata": {"channel": "facilities", "tags": ["desks", "ergonomics"]}
+  },
+  {
+    "message_id": "msg_064",
+    "url": "https://example.com/msg_064",
+    "author": "Kara",
+    "timestamp": "2025-03-05T16:00:00Z",
+    "content": "SEO improvements pushed to production. Expecting traffic boost.",
+    "metadata": {"channel": "marketing", "tags": ["seo", "traffic"]}
+  },
+  {
+    "message_id": "msg_065",
+    "url": "https://example.com/msg_065",
+    "author": "Luke",
+    "timestamp": "2025-03-06T09:15:00Z",
+    "content": "Code freeze for release v2.5 starts tomorrow at 5pm.",
+    "metadata": {"channel": "engineering", "tags": ["code-freeze", "release"]}
+  },
+  {
+    "message_id": "msg_066",
+    "url": "https://example.com/msg_066",
+    "author": "Maya",
+    "timestamp": "2025-03-07T11:30:00Z",
+    "content": "Customer satisfaction survey responses at 92%. Fantastic!",
+    "metadata": {"channel": "success", "tags": ["survey", "satisfaction"]}
+  },
+  {
+    "message_id": "msg_067",
+    "url": "https://example.com/msg_067",
+    "author": "Nick",
+    "timestamp": "2025-03-08T13:45:00Z",
+    "content": "International Women's Day celebration at 4pm in the main hall.",
+    "metadata": {"channel": "events", "tags": ["iwd", "celebration"]}
+  },
+  {
+    "message_id": "msg_068",
+    "url": "https://example.com/msg_068",
+    "author": "Olga",
+    "timestamp": "2025-03-09T15:00:00Z",
+    "content": "Tech stack review meeting scheduled for next Wednesday.",
+    "metadata": {"channel": "engineering", "tags": ["tech-stack", "review"]}
+  },
+  {
+    "message_id": "msg_069",
+    "url": "https://example.com/msg_069",
+    "author": "Phil",
+    "timestamp": "2025-03-10T08:20:00Z",
+    "content": "Parking permits for Q2 available at reception. First come, first served.",
+    "metadata": {"channel": "facilities", "tags": ["parking", "permits"]}
+  },
+  {
+    "message_id": "msg_070",
+    "url": "https://example.com/msg_070",
+    "author": "Queenie",
+    "timestamp": "2025-03-11T10:35:00Z",
+    "content": "Brand refresh project kickoff tomorrow. All stakeholders invited.",
+    "metadata": {"channel": "marketing", "tags": ["brand", "kickoff"]}
+  },
+  {
+    "message_id": "msg_071",
+    "url": "https://example.com/msg_071",
+    "author": "Ryan",
+    "timestamp": "2025-03-12T12:50:00Z",
+    "content": "Cloud costs optimized. Saving $5k per month going forward.",
+    "metadata": {"channel": "devops", "tags": ["cloud", "costs"]}
+  },
+  {
+    "message_id": "msg_072",
+    "url": "https://example.com/msg_072",
+    "author": "Sophia",
+    "timestamp": "2025-03-13T15:05:00Z",
+    "content": "UX research findings presentation scheduled for Friday afternoon.",
+    "metadata": {"channel": "design", "tags": ["ux", "research"]}
+  },
+  {
+    "message_id": "msg_073",
+    "url": "https://example.com/msg_073",
+    "author": "Tom",
+    "timestamp": "2025-03-14T16:20:00Z",
+    "content": "Pi Day celebration! Pizza in the break room at 3:14pm.",
+    "metadata": {"channel": "random", "tags": ["pi-day", "pizza"]}
+  },
+  {
+    "message_id": "msg_074",
+    "url": "https://example.com/msg_074",
+    "author": "Unity",
+    "timestamp": "2025-03-15T09:35:00Z",
+    "content": "Mentorship program applications now open. Sign up by end of month.",
+    "metadata": {"channel": "learning", "tags": ["mentorship", "program"]}
+  },
+  {
+    "message_id": "msg_075",
+    "url": "https://example.com/msg_075",
+    "author": "Vera",
+    "timestamp": "2025-03-16T11:50:00Z",
+    "content": "OAuth 2.0 implementation complete. Testing phase begins Monday.",
+    "metadata": {"channel": "engineering", "tags": ["oauth", "authentication"]}
+  },
+  {
+    "message_id": "msg_076",
+    "url": "https://example.com/msg_076",
+    "author": "Walter",
+    "timestamp": "2025-03-17T14:05:00Z",
+    "content": "St. Patrick's Day office party at 5pm. Wear green!",
+    "metadata": {"channel": "events", "tags": ["st-patricks", "party"]}
+  },
+  {
+    "message_id": "msg_077",
+    "url": "https://example.com/msg_077",
+    "author": "Xena",
+    "timestamp": "2025-03-18T16:20:00Z",
+    "content": "Quarterly investor update presentation ready for board review.",
+    "metadata": {"channel": "executive", "tags": ["investor", "board"]}
+  },
+  {
+    "message_id": "msg_078",
+    "url": "https://example.com/msg_078",
+    "author": "York",
+    "timestamp": "2025-03-19T08:35:00Z",
+    "content": "New feature flags system deployed. Documentation in Confluence.",
+    "metadata": {"channel": "engineering", "tags": ["feature-flags", "deployment"]}
+  },
+  {
+    "message_id": "msg_079",
+    "url": "https://example.com/msg_079",
+    "author": "Zelda",
+    "timestamp": "2025-03-20T10:50:00Z",
+    "content": "Spring cleaning day for the codebase! Delete that dead code.",
+    "metadata": {"channel": "engineering", "tags": ["cleanup", "refactor"]}
+  },
+  {
+    "message_id": "msg_080",
+    "url": "https://example.com/msg_080",
+    "author": "Adam",
+    "timestamp": "2025-03-21T13:05:00Z",
+    "content": "First day of spring! Weather is beautiful today.",
+    "metadata": {"channel": "random", "tags": ["spring", "weather"]}
+  },
+  {
+    "message_id": "msg_081",
+    "url": "https://example.com/msg_081",
+    "author": "Bella",
+    "timestamp": "2025-03-22T15:20:00Z",
+    "content": "Onboarding checklist updated with new items. HR portal has details.",
+    "metadata": {"channel": "hr", "tags": ["onboarding", "checklist"]}
+  },
+  {
+    "message_id": "msg_082",
+    "url": "https://example.com/msg_082",
+    "author": "Carl",
+    "timestamp": "2025-03-23T16:35:00Z",
+    "content": "GraphQL API v2 now in beta. Developer docs updated.",
+    "metadata": {"channel": "engineering", "tags": ["graphql", "api", "beta"]}
+  },
+  {
+    "message_id": "msg_083",
+    "url": "https://example.com/msg_083",
+    "author": "Diana",
+    "timestamp": "2025-03-24T09:50:00Z",
+    "content": "Sales team exceeded Q1 targets by 15%. Congratulations!",
+    "metadata": {"channel": "sales", "tags": ["targets", "q1", "success"]}
+  },
+  {
+    "message_id": "msg_084",
+    "url": "https://example.com/msg_084",
+    "author": "Ethan",
+    "timestamp": "2025-03-25T12:05:00Z",
+    "content": "Coffee chat roulette signups open. Meet new teammates!",
+    "metadata": {"channel": "culture", "tags": ["coffee", "networking"]}
+  },
+  {
+    "message_id": "msg_085",
+    "url": "https://example.com/msg_085",
+    "author": "Fiona",
+    "timestamp": "2025-03-26T14:20:00Z",
+    "content": "Dark mode feature shipped to 100% of users. Feedback welcome!",
+    "metadata": {"channel": "product", "tags": ["dark-mode", "feature"]}
+  },
+  {
+    "message_id": "msg_086",
+    "url": "https://example.com/msg_086",
+    "author": "George",
+    "timestamp": "2025-03-27T16:35:00Z",
+    "content": "Automated testing coverage now at 85%. Keep up the good work!",
+    "metadata": {"channel": "qa", "tags": ["testing", "coverage"]}
+  },
+  {
+    "message_id": "msg_087",
+    "url": "https://example.com/msg_087",
+    "author": "Hannah",
+    "timestamp": "2025-03-28T08:50:00Z",
+    "content": "Team offsite planning in progress. Location suggestions welcome!",
+    "metadata": {"channel": "events", "tags": ["offsite", "planning"]}
+  },
+  {
+    "message_id": "msg_088",
+    "url": "https://example.com/msg_088",
+    "author": "Ian",
+    "timestamp": "2025-03-29T11:05:00Z",
+    "content": "Password policy updated. Please reset your password by Monday.",
+    "metadata": {"channel": "security", "tags": ["password", "policy"]}
+  },
+  {
+    "message_id": "msg_089",
+    "url": "https://example.com/msg_089",
+    "author": "Julia",
+    "timestamp": "2025-03-30T13:20:00Z",
+    "content": "End of quarter all-hands meeting tomorrow at 2pm. Don't miss it!",
+    "metadata": {"channel": "general", "tags": ["all-hands", "eqq"]}
+  },
+  {
+    "message_id": "msg_090",
+    "url": "https://example.com/msg_090",
+    "author": "Kevin",
+    "timestamp": "2025-03-31T15:35:00Z",
+    "content": "Q1 retrospective notes compiled. Key takeaways in the wiki.",
+    "metadata": {"channel": "agile", "tags": ["retrospective", "q1"]}
+  },
+  {
+    "message_id": "msg_091",
+    "url": "https://example.com/msg_091",
+    "author": "Laura",
+    "timestamp": "2025-04-01T08:00:00Z",
+    "content": "April Fools! No pranks in the office please, we have work to do.",
+    "metadata": {"channel": "random", "tags": ["april-fools"]}
+  },
+  {
+    "message_id": "msg_092",
+    "url": "https://example.com/msg_092",
+    "author": "Marcus",
+    "timestamp": "2025-04-02T10:15:00Z",
+    "content": "Microservices architecture migration at 60% completion.",
+    "metadata": {"channel": "engineering", "tags": ["microservices", "migration"]}
+  },
+  {
+    "message_id": "msg_093",
+    "url": "https://example.com/msg_093",
+    "author": "Nina",
+    "timestamp": "2025-04-03T12:30:00Z",
+    "content": "Customer webinar recording available on the learning portal.",
+    "metadata": {"channel": "success", "tags": ["webinar", "recording"]}
+  },
+  {
+    "message_id": "msg_094",
+    "url": "https://example.com/msg_094",
+    "author": "Oliver",
+    "timestamp": "2025-04-04T14:45:00Z",
+    "content": "Code refactoring week starts Monday. Let's clean up technical debt!",
+    "metadata": {"channel": "engineering", "tags": ["refactoring", "tech-debt"]}
+  },
+  {
+    "message_id": "msg_095",
+    "url": "https://example.com/msg_095",
+    "author": "Penny",
+    "timestamp": "2025-04-05T16:00:00Z",
+    "content": "Mental health awareness resources added to the employee portal.",
+    "metadata": {"channel": "wellness", "tags": ["mental-health", "resources"]}
+  },
+  {
+    "message_id": "msg_096",
+    "url": "https://example.com/msg_096",
+    "author": "Quincy",
+    "timestamp": "2025-04-06T09:15:00Z",
+    "content": "New conference room booking system live. Check it out!",
+    "metadata": {"channel": "facilities", "tags": ["booking", "rooms"]}
+  },
+  {
+    "message_id": "msg_045",
+    "url": "https://example.com/msg_045",
+    "author": "Sarah",
+    "timestamp": "2025-01-15T14:05:00Z",
+    "content": "Confirming the project timeline: target delivery is set for Q2 2025.",
+    "metadata": {
+      "channel": "planning",
+      "tags": ["timeline", "schedule", "q2-2025"]
+    }
+  },
+  {
+    "message_id": "msg_097",
+    "url": "https://example.com/msg_097",
+    "author": "Rose",
+    "timestamp": "2025-04-07T11:30:00Z",
+    "content": "Product analytics dashboard redesigned. Feedback appreciated!",
+    "metadata": {"channel": "analytics", "tags": ["dashboard", "redesign"]}
+  },
+  {
+    "message_id": "msg_098",
+    "url": "https://example.com/msg_098",
+    "author": "Simon",
+    "timestamp": "2025-04-08T13:45:00Z",
+    "content": "Lunch options near the office compiled in this Google doc.",
+    "metadata": {"channel": "random", "tags": ["lunch", "food"]}
+  },
+  {
+    "message_id": "msg_099",
+    "url": "https://example.com/msg_099",
+    "author": "Tara",
+    "timestamp": "2025-04-09T15:00:00Z",
+    "content": "Charity fundraiser kickoff! Supporting local schools this quarter.",
+    "metadata": {"channel": "social-impact", "tags": ["charity", "fundraiser"]}
+  },
+  {
+    "message_id": "msg_100",
+    "url": "https://example.com/msg_100",
+    "author": "Umar",
+    "timestamp": "2025-04-10T16:15:00Z",
+    "content": "Kubernetes cluster upgraded to v1.28. All pods running smoothly.",
+    "metadata": {"channel": "devops", "tags": ["kubernetes", "upgrade"]}
+  },
+  {
+    "message_id": "msg_101",
+    "url": "https://example.com/msg_101",
+    "author": "Violet",
+    "timestamp": "2025-04-11T08:30:00Z",
+    "content": "Weekly standup time changed to 9:30am starting next week.",
+    "metadata": {"channel": "agile", "tags": ["standup", "schedule"]}
+  },
+  {
+    "message_id": "msg_102",
+    "url": "https://example.com/msg_102",
+    "author": "William",
+    "timestamp": "2025-04-12T10:45:00Z",
+    "content": "Browser extension beta released. Chrome Web Store link in Slack.",
+    "metadata": {"channel": "product", "tags": ["extension", "beta", "chrome"]}
+  }
+]
